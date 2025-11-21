@@ -28,7 +28,8 @@ export default function SignupPage() {
         email,
         password,
         role,
-      });
+      },
+     { withCredentials: true });
 
       // ✅ Store token and role in localStorage
       localStorage.setItem("token", res.data.token);

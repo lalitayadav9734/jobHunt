@@ -23,7 +23,8 @@ export default function LoginPage() {
       const res = await axios.post(`${API}/api/users/login` , {
         email,
         password,
-      });
+      },
+     { withCredentials: true });
 
       const { token, role } = res.data;
       localStorage.setItem("token", token);
