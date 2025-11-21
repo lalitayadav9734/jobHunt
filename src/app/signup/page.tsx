@@ -49,8 +49,8 @@ export default function SignupPage() {
       setPassword("");
       setRole("");
 
-    } catch (err) {
-      console.error(err);
+    } catch  {
+      console.error('error');
       setMessage("Something went wrong. Try again.");
     } finally {
       setLoading(false);
