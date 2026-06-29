@@ -9,10 +9,11 @@ export default function Home() {
   return (
     <div>
     <Hero/>
-    <Features/>
      <Jobcategories/>
+       <Cta/>  
+      <Features/>
     <Testimonial/>
-    <Cta/>  
+  
    
     </div>
   );
