@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 
-const API = "https://job-platform-perz.onrender.com";
 
 export default function SignupPage() {
   const [name, setName] = useState("");
@@ -14,6 +13,9 @@ export default function SignupPage() {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const router = useRouter();
+  
+  const API = "https://job-platform-perz.onrender.com";
+
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
